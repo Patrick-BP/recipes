@@ -1,7 +1,9 @@
 package com.patrick.recipes;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class RecipesApplication {
@@ -11,5 +13,10 @@ public class RecipesApplication {
 		SpringApplication.run(RecipesApplication.class, args);
 		System.out.println("===End===");
 	}
+
+//	@Bean
+//	public ModelMapper modelMapper(){
+//		return new ModelMapper();
+//	}
 
 }
